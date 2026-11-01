@@ -1,0 +1,413 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sorry My Baby ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg,#ffd6e5,#fff0f5,#ffc1d6);
+    font-family: Georgia,serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 500px;
+    width: 100%;
+    background: rgba(255,255,255,.9);
+    padding: 30px 22px;
+    border-radius: 25px;
+    text-align: center;
+    box-shadow: 0 10px 40px #d66b9340;
+    position: relative;
+    z-index: 2;
+}
+
+.emoji {
+    font-size: 65px;
+    animation: beat 1s infinite;
+}
+
+h1 {
+    color: #e84375;
+    margin: 15px 0;
+}
+
+.subtitle {
+    color: #a64d70;
+    margin-bottom: 25px;
+}
+
+.letter {
+    background: #fff0f5;
+    border: 2px dashed #f29ab8;
+    border-radius: 18px;
+    padding: 22px;
+    color: #70404f;
+    text-align: left;
+    line-height: 1.8;
+}
+
+.letter h2 {
+    color: #e84375;
+    margin-bottom: 12px;
+}
+
+.letter p {
+    margin-bottom: 13px;
+}
+
+.letter h3 {
+    color: #e84375;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.question {
+    margin: 28px 0 20px;
+    color: #d6336c;
+    font-size: 21px;
+}
+
+button {
+    border: none;
+    border-radius: 30px;
+    padding: 14px 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 5px;
+    transition: .3s;
+}
+
+#yes {
+    background: #ed4b83;
+    color: white;
+}
+
+#no {
+    background: #f4d6e0;
+    color: #b33b68;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+#response {
+    color: #e84375;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.heart {
+    position: fixed;
+    bottom: -30px;
+    animation: float 6s linear forwards;
+    pointer-events: none;
+    z-index: 1;
+}
+
+@keyframes float {
+    to {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes beat {
+    50% { transform: scale(1.15); }
+}
+
+/* SECOND PAGE */
+
+#sorryPage {
+    display: none;
+    width: 100%;
+    max-width: 550px;
+    text-align: center;
+    background: rgba(255,255,255,.9);
+    border-radius: 25px;
+    padding: 30px 15px;
+    box-shadow: 0 10px 40px #d66b9340;
+    position: relative;
+    z-index: 2;
+}
+
+#sorryPage h1 {
+    color: #e84375;
+}
+
+.teddies {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 15px;
+    margin: 35px 0;
+}
+
+.teddy {
+    font-size: 105px;
+    position: relative;
+    animation: teddyMove 2s infinite ease-in-out;
+}
+
+.girl {
+    animation-delay: .5s;
+}
+
+.boy::after {
+    content: "❤️";
+    position: absolute;
+    font-size: 35px;
+    top: 15px;
+    right: -8px;
+    animation: beat 1s infinite;
+}
+
+.girl::after {
+    content: "🎀";
+    position: absolute;
+    font-size: 30px;
+    top: -5px;
+    right: 0;
+}
+
+@keyframes teddyMove {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+
+.apology {
+    background: #fff0f5;
+    border: 2px dashed #f29ab8;
+    padding: 22px;
+    border-radius: 20px;
+    color: #9e4168;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.apology h2 {
+    color: #e84375;
+    margin-bottom: 12px;
+}
+
+#forgive {
+    background: #ed4b83;
+    color: white;
+    padding: 15px 25px;
+}
+
+#finalMessage {
+    display: none;
+    color: #e84375;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- FIRST PAGE -->
+
+<div class="container" id="mainPage">
+
+    <div class="emoji">🥺❤️</div>
+
+    <h1>I'm Sorry, My Baby!</h1>
+
+    <p class="subtitle">To the most special girl in my world 💗</p>
+
+    <div class="letter">
+
+        <h2>My Love, 💌</h2>
+
+        <p>I know I've made you feel ignored, and I'm genuinely sorry for that.</p>
+
+        <p>You never deserved to feel that way. You deserve my time, attention, care and all the love in this world.</p>
+
+        <p>Sometimes I may fail to express how much you mean to me, but please never doubt your importance in my life.</p>
+
+        <p>I don't want to just say sorry. I want to make things better through my actions.</p>
+
+        <p>You're my favourite person, my happiness and my little baby. 🥺</p>
+
+        <h3>I LOVE YOU SO MUCH! ❤️🧸</h3>
+
+    </div>
+
+    <h2 class="question">Will you forgive your idiot? 🥺</h2>
+
+    <button id="yes" onclick="forgive()">YES, MY BABY ❤️</button>
+
+    <button id="no" onclick="openSorry()">NO 😤</button>
+
+    <p id="response"></p>
+
+</div>
+
+
+<!-- SECOND PAGE -->
+
+<div id="sorryPage">
+
+    <div style="font-size:55px;">🥺💗</div>
+
+    <h1>WAITTT MY BABY!!</h1>
+
+    <p style="color:#a64d70;">
+        Please don't be angry with your teddy 🧸
+    </p>
+
+    <div class="teddies">
+
+        <div class="teddy boy">🧸</div>
+
+        <div style="font-size:35px;">💗</div>
+
+        <div class="teddy girl">🧸</div>
+
+    </div>
+
+    <div class="apology">
+
+        <h2>Heyyy My Princess! 🎀</h2>
+
+        <p>
+            Look at your little teddy...
+            He's standing here with a heart full of love
+            and a big apology for his girl. 🥺
+        </p>
+
+        <p>
+            He knows he made his princess feel ignored.
+            He knows he should have given her more time,
+            attention and affection.
+        </p>
+
+        <p>
+            He's really sorry, baby.
+            He doesn't want his favourite girl to cry.
+            He just wants to see her smile again. ❤️
+        </p>
+
+        <h3>I'M SORRY, MY PRINCESS! 💋</h3>
+
+    </div>
+
+    <h2 style="color:#e84375;margin-bottom:15px;">
+        Can you forgive your teddy? 🥹
+    </h2>
+
+    <button id="forgive" onclick="finalLove()">
+        OKAY, I FORGIVE YOU ❤️
+    </button>
+
+    <div id="finalMessage">
+        YAYYYYY!! 🥹💕<br><br>
+        COME HERE, MY BABYYYY! 💋<br>
+        SENDING YOU 1000 HUGS! 🧸❤️
+    </div>
+
+</div>
+
+
+<script>
+
+function createHeart() {
+    const heart = document.createElement("div");
+
+    heart.className = "heart";
+
+    const emojis = ["❤️","💗","💕","💖","💘","🧸"];
+
+    heart.innerHTML =
+        emojis[Math.floor(Math.random() * emojis.length)];
+
+    heart.style.left = Math.random() * 100 + "vw";
+
+    heart.style.fontSize =
+        (15 + Math.random() * 25) + "px";
+
+    heart.style.animationDuration =
+        (3 + Math.random() * 4) + "s";
+
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(),7000);
+}
+
+setInterval(createHeart,400);
+
+
+// YES BUTTON
+
+function forgive() {
+
+    document.getElementById("response").innerHTML =
+        "YAYYYY!! I LOVE YOU SO MUCH BABY! 🥹❤️";
+
+    document.querySelector(".question").innerHTML =
+        "YOU ARE MY FOREVER HAPPINESS! 💗";
+
+    document.getElementById("yes").style.display = "none";
+    document.getElementById("no").style.display = "none";
+
+    for(let i=0;i<50;i++) {
+        setTimeout(createHeart,i*50);
+    }
+}
+
+
+// NO BUTTON - OPEN SECOND PAGE
+
+function openSorry() {
+
+    document.getElementById("mainPage").style.display = "none";
+
+    document.getElementById("sorryPage").style.display = "block";
+
+    window.scrollTo(0,0);
+
+    for(let i=0;i<30;i++) {
+        setTimeout(createHeart,i*100);
+    }
+}
+
+
+// FINAL BUTTON
+
+function finalLove() {
+
+    document.getElementById("finalMessage").style.display = "block";
+
+    document.getElementById("forgive").style.display = "none";
+
+    for(let i=0;i<100;i++) {
+        setTimeout(createHeart,i*40);
+    }
+
+}
+
+</script>
+
+</body>
+</html>
